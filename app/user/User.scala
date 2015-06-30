@@ -1,6 +1,4 @@
-package assets
-
-import play.libs.Json
+package user
 
 import scala.collection.mutable.ListBuffer
 
@@ -25,5 +23,11 @@ class Item (val itemName:String,description:String,iconUrl:String)
 object Item {
   def apply(name:String) = {
     new Item(name,"","")
+  }
+  def apply (name:String,description:String) = {
+    new Item(name,description,"")
+  }
+  def apply (name:String,description:String,iconUrl:String) = {
+    new Item(name,description,iconUrl)
   }
 }

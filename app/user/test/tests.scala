@@ -1,5 +1,4 @@
-import assets.{Item, Basket, User}
-
+import user.{Basket, Item}
 import scala.collection.mutable.ListBuffer
 
 /**
@@ -16,5 +15,4 @@ object tests extends App{
   Basket.addItem(basket1,"item3")
   //itemList.foreach(itm => println(itm.itemName))
   Basket.listItems(basket1)
-
 }
